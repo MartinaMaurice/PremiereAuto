@@ -11,9 +11,26 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" routerLink="/info">Info Page</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/cars">Cars</a>
+        <li ngbDropdown class="nav-item dropdown">
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="navbarDropdownCars" role="button">
+            Cars
+          </a>
+          <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownCars">
+            <li ngbDropdownItem>
+              <a class="dropdown-item" routerLink="/cars/porsche">Porsche</a>
+            </li>
+            <li ngbDropdownItem>
+              <a class="dropdown-item" routerLink="/cars/bmw">BMW</a>
+            </li>
+            <li ngbDropdownItem>
+              <a class="dropdown-item" routerLink="/cars/mercedes">Mercedes</a>
+            </li>
+            <li ngbDropdownItem>
+              <a class="dropdown-item" routerLink="/cars/Audi">Audi</a>
+            </li>
+          </ul>
         </li>
+
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" routerLink="/purchase">Purchase</a>
         </li>

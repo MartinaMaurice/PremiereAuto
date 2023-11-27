@@ -1,0 +1,168 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div style="margin-top: 40px; margin-left: 100px; width: 300px; height: 250px;">
+                <img src="assets/Porsche 911.webp" style="width: 100%; height: 100%;">
+            </div>
+            <div style="display: flex; align-items: left; margin-left: 165px; margin-top: 5px;">
+                <button class="btn btn-primary" (click)="toggleCollapse('collapseWidthExample1')">View Car
+                    Details</button>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div [ngClass]="{'collapse': !showFirst, 'multi-collapse': true}" id="multiCollapseExample1">
+                        <div class="card card-body" style="width: 500px; margin-left: 100px;">
+                            <img src="assets\911.jpg" style="width: 170px; height: 120px;">
+                            <p style="font-weight: 800;">Price: 100M</p>
+                            Porsche 911 Carrera offers a balance of performance and daily drivability, with a 3.0-liter
+                            twin-turbocharged flat-six engine producing 379 to 443 horsepower, depending on the trim
+                            level. You can
+                            choose from a range of stunning colors, such as Carrara White Metallic, Guards Red, and Jet
+                            Black
+                            Metallic, to personalize your Porsche 911
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Column (3 Cars) -->
+        <div class="col-md-4">
+            <!-- Second Car -->
+            <div style="margin-top: 50px; margin-left: 300px; width: 300px; height: 250px;">
+                <img src="assets/Porsche Cayenne.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div style="display: flex; align-items: left; width: 200px; margin-left:360px; margin-top: 5px;">
+                <button class="btn btn-primary" (click)="toggleCollapse('collapseWidthExample3')">View Car
+                    Details</button>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div [ngClass]="{'collapse': !showThird, 'multi-collapse': true}" id="multiCollapseExample3">
+                        <div class="card card-body" style="width: 500px;  margin-left: 300px; ">
+                            <img src="assets\cayenna.jpg" style="width: 170px; height: 120px;">
+                            <p style="font-weight: 800;">Price: 100M</p>
+                            Porsche Cayenne typically features a 3.0-liter turbocharged V6 engine producing
+                            approximately
+                            335 to 335
+                            horsepower, while the Cayenne S offers more power with a 2.9-liter twin-turbo V6 engine
+                            generating
+                            around 434 to 434 horsepower. Color options for the Cayenne include timeless choices like
+                            White, Black,
+                            and Carrara White Metallic, as well as eye-catching options like Carmine Red and Lava
+                            Orange.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- First Car -->
+    <div class="row">
+        <!-- Car 1 -->
+        <div class="col-md-4">
+            <div style="margin-top: 50px; margin-left: 100px; width: 300px; height: 250px;">
+                <img src="assets/Macan.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div style="display: flex; align-items: left; margin-left: 175px; margin-top: 5px;">
+                <button class="btn btn-primary" (click)="toggleCollapse('collapseWidthExample4')">View Car
+                    Details</button>
+            </div>
+            <div class="col">
+                <div [ngClass]="{'collapse': !showFourth, 'multi-collapse': true}" id="multiCollapseExample4">
+                    <div class="card card-body" style="width: 500px;  margin-left: 100px; ">
+                        <img src="assets/macannn.jpg" style="width: 170px; height: 120px;">
+                        <p style="font-weight: 800;">Price: 100M</p>
+                        Porsche Macan typically features a 2.0-liter turbocharged inline-four engine producing around
+                        261 to 265
+                        horsepower. Color options for the Macan may include classic choices like White, Black, and Agate
+                        Grey
+                        Metallic, as well as more vibrant options like Mamba Green Metallic and Papaya Metallic.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="col-md-4">
+            <div style="margin-top: 50px; margin-left: 300px; width: 400px; height: 250px;">
+                <img src="assets/Panamera.png" style="width: 100%; height: 100%;">
+            </div>
+            <div style="display: flex; align-items: center;width: 200px; margin-left: 375px; margin-top: 5px;">
+                <button class="btn btn-primary" (click)="toggleCollapse('collapseWidthExample5')">View Car
+                    Details</button>
+            </div>
+            <div class="col">
+                <div [ngClass]="{'collapse': !showFifth, 'multi-collapse': true}" id="multiCollapseExample5">
+                    <div class="card card-body" style="width: 500px; margin-left: 300px;">
+                        <img src="assets\panamera.jpg" style="width: 170px; height: 120px;">
+                        <p style="font-weight: 800;">Price: 100M</p>
+                        Porsche Panamera typically features a 2.9-liter twin-turbocharged V6 engine producing around 325
+                        to 325 horsepower, while the Panamera S offers more power with a 2.9-liter twin-turbo V6 engine
+                        generating approximately 434 to 434 horsepower. Color options for the Panamera include classic
+                        choices.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Car 1 -->
+        <div class="col-md-4">
+            <div style="margin-top: 50px; margin-left: 100px; width: 300px; height: 250px;">
+                <img src="assets/Boxter.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div style="display: flex; align-items: left; margin-left: 175px; margin-top: 5px;">
+                <button class="btn btn-primary" (click)="toggleCollapse('collapseWidthExample4')">View Car
+                    Details</button>
+            </div>
+            <div class="col">
+                <div [ngClass]="{'collapse': !showFourth, 'multi-collapse': true}" id="multiCollapseExample4">
+                    <div class="card card-body" style="width: 500px;  margin-left: 100px; ">
+                        <img src="assets\718boxter.jpg" style="width: 170px; height: 120px;">
+                        <p style="font-weight: 800;">Price: 100M</p>
+                        Porsche 718 Boxster typically features a 2.0-liter turbocharged flat-four engine producing
+                        around 300 to 300 horsepower, while the 718 Boxster S offers more power with a 2.5-liter
+                        turbocharged flat-four engine generating approximately 350 to 350 horsepower. Color options for
+                        the 718 Boxster include classic choices like White, Black, and Guards Red.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="col-md-4">
+            <div style="margin-top: 50px; margin-left: 300px; width: 300px; height: 250px;">
+                <img src="assets/Taycan.png" style="width: 120%; height: 100%;">
+            </div>
+            <div style="display: flex; align-items: center;width: 200px; margin-left: 375px; margin-top: 5px;">
+                <button class="btn btn-primary" (click)="toggleCollapse('collapseWidthExample5')">View Car
+                    Details</button>
+            </div>
+            <div class="col">
+                <div [ngClass]="{'collapse': !showFifth, 'multi-collapse': true}" id="multiCollapseExample5">
+                    <div class="card card-body" style="width: 500px; margin-left: 300px;">
+                        <img src="assets\taycan.jpg" style="width: 170px; height: 120px;">
+                        <p style="font-weight: 800;">Price: 100M</p>
+                        Porsche Taycan typically features a single-motor setup producing around 402 to 402 horsepower,
+                        while the Taycan 4S offers more power with up to approximately 522 to 522 horsepower.Color
+                        options for the Taycan include classic choices like White, Black, and Carrara White Metallic, as
+                        well as striking options like Frozen Blue Metallic and Gentian Blue Metallic.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2023 premiere auto</p>
+            <p>Contact: <a href="tel:+1234567890">+1 (234) 567-890</a> </p>
+            <p> Email: <a href="mailto:info&#64;premiereauto.com">info&#64;premiereauto.com</a></p>
+        </div>
+    </footer>
+</footer>

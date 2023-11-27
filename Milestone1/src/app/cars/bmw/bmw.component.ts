@@ -1,18 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink } from '@angular/router';
-import { PorscheComponent } from './porsche/porsche.component';
-
-
 
 @Component({
-  selector: 'app-cars',
+  selector: 'app-bmw',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, PorscheComponent],
-  templateUrl: './cars.component.html',
-  styleUrl: './cars.component.css'
+  imports: [CommonModule, RouterOutlet, RouterLink],
+  templateUrl: './bmw.component.html',
+  styleUrl: './bmw.component.css'
 })
-export class CarsComponent {
+export class BMWComponent {
 
   showFirst: boolean = true;
   showSecond: boolean = true;

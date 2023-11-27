@@ -5,7 +5,10 @@ import { InfoComponent } from './info/info.component';
 import { CarsComponent } from './cars/cars.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { PurchaseComponent } from './purchase/purchase.component';
-import {LoginComponent} from './login/login.component';
+import { LoginComponent } from './login/login.component';
+import { PorscheComponent } from './cars/porsche/porsche.component';
+import { BMWComponent } from './cars/bmw/bmw.component';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 export const routes: Routes = [
     {
@@ -27,6 +30,16 @@ export const routes: Routes = [
         path: 'cars',
         title: 'Cars Page',
         component: CarsComponent,
+    },
+    {
+        path: 'cars/porsche',
+        title: 'Porsche Cars',
+        component: PorscheComponent,
+    },
+    {
+        path: 'cars/bmw',
+        title: 'BMW Cars',
+        component: BMWComponent,
     },
     {
         path: 'contactus',

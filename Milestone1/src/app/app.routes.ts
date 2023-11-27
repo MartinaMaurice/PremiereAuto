@@ -8,6 +8,7 @@ import { PurchaseComponent } from './purchase/purchase.component';
 import { LoginComponent } from './login/login.component';
 import { PorscheComponent } from './cars/porsche/porsche.component';
 import { BMWComponent } from './cars/bmw/bmw.component';
+import { MercedesComponent } from './cars/mercedes/mercedes.component';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 export const routes: Routes = [
@@ -40,6 +41,11 @@ export const routes: Routes = [
         path: 'cars/bmw',
         title: 'BMW Cars',
         component: BMWComponent,
+    },
+    {
+        path: 'cars/mercedes',
+        title: 'Mercedes Cars',
+        component: MercedesComponent,
     },
     {
         path: 'contactus',

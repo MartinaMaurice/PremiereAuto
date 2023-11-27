@@ -1,0 +1,171 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div style="margin-top: 40px; margin-left: 100px; width: 300px; height: 250px;">
+                <img src="assets/A5-logo.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div style="display: flex; align-items: left; margin-left: 165px; margin-top: 5px;">
+                <button class="btn btn-primary" (click)="toggleCollapse('collapseWidthExample1')">View Car
+                    Details</button>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div [ngClass]="{'collapse': !showFirst, 'multi-collapse': true}" id="multiCollapseExample1">
+                        <div class="card card-body" style="width: 500px; margin-left: 100px;">
+                            <img src="assets\A5.jpg" style="width: 200px; height: 120px;">
+                            <p style="font-weight: 800;">Price: 30M</p>
+                            The Audi A5 is a sleek and stylish luxury coupe or convertible known for its sophisticated
+                            design and balanced performance. Equipped with a range of engine options, including
+                            turbocharged four-cylinder and V6 engines, it typically delivers around 201 to 349
+                            horsepower, offering a good blend of efficiency and performance across its lineup. With its
+                            refined handling and comfortable ride quality, the A5 provides a smooth and enjoyable
+                            driving experience.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Column (3 Cars) -->
+        <div class="col-md-4">
+            <!-- Second Car -->
+            <div style="margin-top: 50px; margin-left: 300px; width: 300px; height: 250px;">
+                <img src="assets/Q8-logo.jpg" style="width: 130%; height: 100%;">
+            </div>
+            <div style="display: flex; align-items: left; width: 200px; margin-left:360px; margin-top: 5px;">
+                <button class="btn btn-primary" (click)="toggleCollapse('collapseWidthExample3')">View Car
+                    Details</button>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div [ngClass]="{'collapse': !showThird, 'multi-collapse': true}" id="multiCollapseExample3">
+                        <div class="card card-body" style="width: 500px;  margin-left: 300px; ">
+                            <img src="assets\Q8.jpg" style="width: 200px; height: 120px;">
+                            <p style="font-weight: 800;">Price: 30M</p>
+                            The Audi Q8 is a luxury SUV that combines cutting-edge technology with a spacious and
+                            luxurious interior. Powered by a range of engines, including turbocharged V6 and V8 options,
+                            it typically delivers around 335 to 500+ horsepower, offering a blend of power and
+                            refinement. With its comfortable ride quality, adaptive air suspension, and responsive
+                            handling, the Q8 provides a smooth and dynamic driving experience.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- First Car -->
+    <div class="row">
+        <!-- Car 1 -->
+        <div class="col-md-4">
+            <div style="margin-top: 50px; margin-left: 100px; width: 300px; height: 250px;">
+                <img src="assets/A7-logo.jpg" style="width: 100%; height: 100%;">
+            </div>
+            <div style="display: flex; align-items: left; margin-left: 175px; margin-top: 5px;">
+                <button class="btn btn-primary" (click)="toggleCollapse('collapseWidthExample4')">View Car
+                    Details</button>
+            </div>
+            <div class="col">
+                <div [ngClass]="{'collapse': !showFourth, 'multi-collapse': true}" id="multiCollapseExample4">
+                    <div class="card card-body" style="width: 500px;  margin-left: 100px; ">
+                        <img src="assets/A7.jpg" style="width: 170px; height: 120px;">
+                        <p style="font-weight: 800;">Price: 30M</p>
+                        The Audi A7 is a luxury sportback that seamlessly blends elegance with dynamic performance.
+                        Powered by a range of engines, typically including turbocharged four-cylinder and V6 options, it
+                        delivers around 248 to 444 horsepower, providing a compelling mix of power and efficiency. With
+                        its sleek and aerodynamic design, the A7 stands out, offering a sporty yet refined appearance.
+                        Its handling strikes a balance between comfort and agility, ensuring an engaging driving
+                        experience.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="col-md-4">
+            <div style="margin-top: 50px; margin-left: 300px; width: 400px; height: 250px;">
+                <img src="assets/R8-logo.webp" style="width: 100%; height: 100%;">
+            </div>
+            <div style="display: flex; align-items: center;width: 200px; margin-left: 375px; margin-top: 5px;">
+                <button class="btn btn-primary" (click)="toggleCollapse('collapseWidthExample5')">View Car
+                    Details</button>
+            </div>
+            <div class="col">
+                <div [ngClass]="{'collapse': !showFifth, 'multi-collapse': true}" id="multiCollapseExample5">
+                    <div class="card card-body" style="width: 500px; margin-left: 300px;">
+                        <img src="assets\R8.jpg" style="width: 170px; height: 120px;">
+                        <p style="font-weight: 800;">Price: 70M</p>
+                        The Audi R8 is an exhilarating high-performance sports car renowned for its dynamic capabilities
+                        and striking design. Available in both coupe and convertible (Spyder) versions, it is powered by
+                        a formidable naturally aspirated V10 engine, typically producing around 562 to 611 horsepower,
+                        offering breathtaking acceleration and thrilling performance. With its lightweight construction,
+                        all-wheel drive, and precise handling, the R8 delivers exceptional agility and control.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Car 1 -->
+        <div class="col-md-4">
+            <div style="margin-top: 50px; margin-left: 100px; width: 300px; height: 250px;">
+                <img src="assets/e-tron-logo.png" style="width: 100%; height: 100%;">
+            </div>
+            <div style="display: flex; align-items: left; margin-left: 175px; margin-top: 5px;">
+                <button class="btn btn-primary" (click)="toggleCollapse('collapseWidthExample4')">View Car
+                    Details</button>
+            </div>
+            <div class="col">
+                <div [ngClass]="{'collapse': !showFourth, 'multi-collapse': true}" id="multiCollapseExample4">
+                    <div class="card card-body" style="width: 500px;  margin-left: 100px; ">
+                        <img src="assets\e-tron.jpg" style="width: 170px; height: 120px;">
+                        <p style="font-weight: 800;">Price: 70M</p>
+                        The Audi e-tron GT is an all-electric grand tourer that redefines electric performance and
+                        luxury. Leveraging Audi's advanced electric technology, it's equipped with a dual-motor setup,
+                        delivering around 522 to 637 horsepower (depending on the variant), offering impressive
+                        acceleration and dynamic driving capabilities. With a design that embodies sportiness and
+                        sophistication, the e-tron GT combines aerodynamics and aesthetics, showcasing a sleek and
+                        purposeful exterior. Its electric drivetrain ensures instant torque delivery, resulting in rapid
+                        acceleration and thrilling performance.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="col-md-4">
+            <div style="margin-top: 50px; margin-left: 300px; width: 300px; height: 250px;">
+                <img src="assets/A3-logo.jpg" style="width: 120%; height: 100%;">
+            </div>
+            <div style="display: flex; align-items: center;width: 200px; margin-left: 375px; margin-top: 5px;">
+                <button class="btn btn-primary" (click)="toggleCollapse('collapseWidthExample5')">View Car
+                    Details</button>
+            </div>
+            <div class="col">
+                <div [ngClass]="{'collapse': !showFifth, 'multi-collapse': true}" id="multiCollapseExample5">
+                    <div class="card card-body" style="width: 500px; margin-left: 300px;">
+                        <img src="assets\A3.jpg" style="width: 180px; height: 120px;">
+                        <p style="font-weight: 800;">Price: 70M</p>
+                        The Audi A3 is a compact luxury sedan or hatchback known for its upscale design, strong
+                        performance, and tech-savvy features. Equipped with a range of engines, typically including
+                        turbocharged four-cylinder options, it delivers around 184 to 228 horsepower, offering a good
+                        balance between efficiency and spirited driving. With its nimble handling and precise steering,
+                        the A3 provides a dynamic and engaging driving experience, particularly well-suited for urban
+                        driving. Its interior features high-quality materials, modern infotainment systems, and a range
+                        of driver-assistance technologies.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2023 premiere auto</p>
+            <p>Contact: <a href="tel:+1234567890">+1 (234) 567-890</a> </p>
+            <p> Email: <a href="mailto:info&#64;premiereauto.com">info&#64;premiereauto.com</a></p>
+        </div>
+    </footer>
+</footer>

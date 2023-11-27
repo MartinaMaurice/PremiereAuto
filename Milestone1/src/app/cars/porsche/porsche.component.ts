@@ -11,14 +11,14 @@ import { RouterOutlet, RouterLink } from '@angular/router';
 })
 export class PorscheComponent {
 
-  showFirst: boolean = true;
-  showSecond: boolean = true;
-  showThird: boolean = true;
-  showFourth: boolean = true;
-  showFifth: boolean = true;
-  showSixth: boolean = true;
-  showSeventh: boolean = true;
-  showEighth: boolean = true;
+  showFirst: boolean = false;
+  showSecond: boolean = false;
+  showThird: boolean = false;
+  showFourth: boolean = false;
+  showFifth: boolean = false;
+  showSixth: boolean = false;
+  showSeventh: boolean = false;
+  showEighth: boolean = false;
 
   toggleCollapse(collapseId: string) {
     if (collapseId === 'collapseWidthExample1') {

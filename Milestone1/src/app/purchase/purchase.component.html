@@ -1,37 +1,37 @@
 <div class="container-fluid">
-    <form>
-        <div class="mb-3">
-            <label for="exampleInputFName" class="form-label">First name</label>
-            <input type="text" class="form-control" id="exampleInputFName" >
-          </div>
-          
-          <div class="mb-3">
-            <label for="exampleInputLName" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="exampleInputLName" >
-          </div>
-          <div class="mb-3">
-            <label for="exampleNationalId" class="form-label">National Id</label>
-            <input type="text" class="form-control" id="exampleNationalId">
-          </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-          <div class="mb-3">
-            <label for="exampleInputContNum" class="form-label">Contact Number</label>
-            <input type="tel" class="form-control" id="exampleInputContNum" >
-          </div>
-          <div id="liveAlertPlaceholder"></div>
-          <a type="button"  class="btn btn-primary"  routerLink="/home">Purchase</a>
-      </form>
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputFName" class="form-label">First name</label>
+      <input type="text" class="form-control" id="exampleInputFName">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputLName" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="exampleInputLName">
+    </div>
+    <div class="mb-3">
+      <label for="exampleNationalId" class="form-label">National Id</label>
+      <input type="text" class="form-control" id="exampleNationalId">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputContNum" class="form-label">Contact Number</label>
+      <input type="tel" class="form-control" id="exampleInputContNum">
+    </div>
+    <div id="liveAlertPlaceholder"></div>
+    <a (click)="clearFormFields()" class="btn btn-primary">Purchase</a>
+  </form>
 </div>
 
 <footer>
-    <footer class="footer-section">
-        <div class="container">
-            <p>&copy; 2023 premiere auto</p>
-            <p>Contact: <a href="tel:+1234567890">+1 (234) 567-890</a> </p>
-            <p> Email: <a href="mailto:info&#64;premiereauto.com">info&#64;premiereauto.com</a></p>
-        </div>
-    </footer>
+  <footer class="footer-section">
+    <div class="container">
+      <p>&copy; 2023 premiere auto</p>
+      <p>Contact: <a href="tel:+1234567890">+1 (234) 567-890</a> </p>
+      <p> Email: <a href="mailto:info&#64;premiereauto.com">info&#64;premiereauto.com</a></p>
+    </div>
+  </footer>
 </footer>

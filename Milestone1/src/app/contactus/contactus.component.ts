@@ -11,5 +11,15 @@ import { RouterOutlet, RouterLink } from '@angular/router';
   styleUrl: './contactus.component.css'
 })
 export class ContactusComponent {
-
+  clearFormFields(): void {
+    this.clearField('exampleInputAddress');
+    this.clearField('exampleInputEmail1');
+    this.clearField('exampleInputtelNum');
+  }
+  clearField(fieldId: string): void {
+    const field = document.getElementById(fieldId) as HTMLInputElement;
+    if (field) {
+      field.value = '';
+    }
+  }
 }
